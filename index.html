@@ -3,484 +3,211 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="Strona domowa Dooty Czerwińskiej">
-    <meta name="author" content="hubertkubiak">
-    <meta name="keywords" content="Dorota, Czerwińska, Poznań, opera, mezzosopran">
-    <title>Dorota Czerwińska</title>
-    <!-- Bootstrap Core CSS -->
--   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-    <link href="css/custom.min.css" rel="stylesheet">
-    <link href="css/responsive.min.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta name="description" content="Strona domowa Doroty Czerwińskiej – mezzosopran, Poznań">
+    <meta name="author" content="Hubert Kubiak">
+    <meta name="theme-color" content="#1c1917">
+    <title>Dorota Czerwińska – mezzosopran</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dorota Czerwińska – mezzosopran">
+    <meta property="og:description" content="Biografia, nagrania, galeria i kontakt.">
+    <meta property="og:image" content="img/head.jpg">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c1917'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23f4efe7'%3EDC%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" type="image/webp" imagesrcset="img/head-1200.webp 1200w, img/head-2000.webp 2000w"
+        imagesizes="(min-width: 64em) 72vw, 150vh">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
-<body id="page-top" class="index">
+<body>
+    <a class="skip-link" href="#biografia">Przejdź do treści</a>
+
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Nawigacja</span> Menu <i class="fa fa-bars"></i>
+    <header class="site-header" id="site-header">
+        <nav class="nav container" aria-label="Nawigacja główna">
+            <a class="nav__brand" href="#top">Dorota Czerwińska</a>
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav__toggle-bars" aria-hidden="true"></span>
+                <span class="nav__toggle-label">Menu</span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#nagrania">Nagrania</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="top" aria-label="Dorota Czerwińska">
+            <picture>
+                <source type="image/webp" srcset="img/head-1200.webp 1200w, img/head-2000.webp 2000w"
+                    sizes="(min-width: 64em) 72vw, 150vh">
+                <img class="hero__image" src="img/head.jpg" alt="" width="2000" height="1331" fetchpriority="high">
+            </picture>
+            <div class="hero__content container">
+                <p class="hero__eyebrow">Mezzosopran</p>
+                <h1 class="hero__title">Dorota<br>Czerwińska</h1>
+                <button class="btn btn--light hero__listen" type="button" aria-pressed="false" data-audio-toggle>
+                    <svg class="icon icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+                    <svg class="icon icon--pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+                    <span data-audio-label>Posłuchaj</span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Dorota Czerwińska</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#biografia">Biografia</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#nagrania">Nagrania</a>
-                    </li>
-                    <!--<li class="page-scroll">
-                        <a href="#oferta">Oferta</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#dydaktyka">Dydaktyka</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#recenzje">Recenzje</a>
-                    </li>-->
-                    <li class="page-scroll">
-                        <a href="#portfolio">Galeria</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#kontakt">Kontakt</a>
-                    </li>
+        </section>
+
+        <!-- Audio player (shown after the first click on "Posłuchaj") -->
+        <div class="player" data-audio-player hidden>
+            <p class="player__title">A. Vivaldi – Largo</p>
+            <audio controls preload="none" src="music/Vivaldi_largo.mp3"></audio>
+        </div>
+
+        <!-- Biography -->
+        <section class="section" id="biografia">
+            <div class="container container--narrow">
+                <h2 class="section__title">Biografia</h2>
+                <div class="prose">
+                    <p>Jest absolwentką Wydziału Handlu Zagranicznego Akademii Ekonomicznej w Poznaniu oraz Wydziału
+                        Wokalno-Aktorskiego Akademii Muzycznej w Bydgoszczy, w klasie śpiewu solowego prof. Katarzyny
+                        Rymarczyk. W latach 1984–89 współpracowała z Pro Sinfoniką w Poznaniu, zaś już podczas studiów
+                        w AE i jako absolwentka śpiewała w Chórze Akademickim UAM w Poznaniu pod dyr. prof. Stanisława
+                        Kulczyńskiego. W latach 1993–2002 była solistką (mezzosopran) Teatru Muzycznego w Poznaniu.</p>
+                    <p>W swoim repertuarze posiada partie operowe, operetkowe i musicalowe, m.in.: rolę Dorabelli
+                        (<cite>Così fan tutte</cite> Mozarta), Drugiej i Trzeciej Damy (<cite>Czarodziejski flet</cite>
+                        Mozarta), Czipry (<cite>Baron cygański</cite> J. Straussa), Jasia (<cite>Jaś i Małgosia</cite>
+                        Humperdincka). W tej ostatniej roli występowała także w Niemczech i Austrii. Śpiewała także
+                        partie: Lia San (<cite>Wiktoria i jej huzar</cite> Abrahama), Lizy (<cite>Hrabina Marica</cite>
+                        Kalmana), księcia Gigi (<cite>Zemsta nietoperza</cite> J. Straussa), Tangolity (<cite>Bal
+                        w Savoyu</cite> Abrahama), Wdowy (musical <cite>Zorba</cite> Kandera), Hrabianki rosyjskiej
+                        (<cite>Król walca</cite> J. Straussa) oraz Siostry Hubert (musical <cite>Siostrunie</cite>
+                        Goggina).</p>
+                    <p>Wykonuje również repertuar oratoryjno-kantatowy. W roku 1990 założyła i do dziś prowadzi – jako
+                        dyrygentka i menedżerka – zespół dziecięco-młodzieżowy Semen Dei. Zespół nagrał 3 kasety i dwie
+                        płyty kompaktowe, koncertował w wielu miastach Polski, a także w Niemczech, Austrii, Norwegii
+                        i Francji. Zespół zdobył wiele nagród i wyróżnień na konkursach i festiwalach, m.in.: I miejsce
+                        na Sacrosongu w Swarzędzu (1993), główna nagroda na Śremsongu (1996, 1997), I miejsce na
+                        Ogólnopolskim Festiwalu Pieśni Religijnej w Żywcu (1996), wyróżnienie (2001) i I miejsce (2002)
+                        na Festiwalu Piosenki Religijnej Święta Góra w Gostyniu. W 2001 roku zespół nagrał autorski
+                        program dla TVP.</p>
+                    <p>Od sezonu artystycznego 2002/2003 współpracuje z Lubuskim Biurem Koncertowym jako prelegentka
+                        i śpiewaczka.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recordings -->
+        <section class="section section--dark" id="nagrania">
+            <div class="container">
+                <h2 class="section__title">Nagrania</h2>
+                <div class="videos">
+                    <div class="video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/HTfGyO9kVBw" title="Nagranie 1"
+                            loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/JhLxK2xGqqo?list=PLDBt7LIJrBCVjfCZnQxBqnMtQ74IJW0uT"
+                            title="Nagranie 2" loading="lazy"
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/rvQvcLXHWI4?list=PLDBt7LIJrBCVjfCZnQxBqnMtQ74IJW0uT"
+                            title="Nagranie 3" loading="lazy"
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/sMVFXfoaS3w?list=PLDBt7LIJrBCVjfCZnQxBqnMtQ74IJW0uT"
+                            title="Nagranie 4" loading="lazy"
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section" id="galeria">
+            <div class="container">
+                <h2 class="section__title">Galeria</h2>
+                <ul class="gallery">
+                    <li><button class="gallery__item" type="button" data-full="https://picsum.photos/seed/dc1/1400/880"><img src="https://picsum.photos/seed/dc1/700/440" alt="Zdjęcie 1" width="700" height="440" loading="lazy"></button></li>
+                    <li><button class="gallery__item" type="button" data-full="https://picsum.photos/seed/dc2/1400/880"><img src="https://picsum.photos/seed/dc2/700/440" alt="Zdjęcie 2" width="700" height="440" loading="lazy"></button></li>
+                    <li><button class="gallery__item" type="button" data-full="https://picsum.photos/seed/dc3/1400/880"><img src="https://picsum.photos/seed/dc3/700/440" alt="Zdjęcie 3" width="700" height="440" loading="lazy"></button></li>
+                    <li><button class="gallery__item" type="button" data-full="https://picsum.photos/seed/dc4/1400/880"><img src="https://picsum.photos/seed/dc4/700/440" alt="Zdjęcie 4" width="700" height="440" loading="lazy"></button></li>
+                    <li><button class="gallery__item" type="button" data-full="https://picsum.photos/seed/dc5/1400/880"><img src="https://picsum.photos/seed/dc5/700/440" alt="Zdjęcie 5" width="700" height="440" loading="lazy"></button></li>
+                    <li><button class="gallery__item" type="button" data-full="https://picsum.photos/seed/dc6/1400/880"><img src="https://picsum.photos/seed/dc6/700/440" alt="Zdjęcie 6" width="700" height="440" loading="lazy"></button></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!--<img class="img-responsive" src="img/profile.png" alt="">-->
-                    <div class="intro-text">
-                        <span class="name">Dorota Czerwińska</span>
-                        <span class="skills">Mezzosopran</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div aria-role="button" class="btn btn-lg btn-outline listen js-listen">posłuchaj</div>
-    </header>
-    <!-- Audio Player -->
-    <div class="container js-audio">
-        <!-- player added by js -->
-    </div>
-    <!-- About Section -->
-    <section id="biografia">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Biografia</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>​Jest absolwentką Wydziału Handlu Zagranicznego Akademii Ekonomicznej w Poznaniu oraz Wydziału Wokalno-Aktorskiego
-                        Akademii Muzycznej w Bydgoszczy, w klasie śpiewu solowego prof. Katarzyny Rymarczyk. W latach 1984-89
-                        współpracowała z Pro Sinfoniką w Poznaniu, zaś już podczas studiów w AE i jako absolwentka śpiewała
-                        w Chórze Akademickim UAM w Poznaniu pod dyr. prof. Stanisława Kulczyńskiego. W latach 1993-2002 była
-                        solistką (mezzosopran) Teatru Muzycznego w Poznaniu. W swoim repertuarze posiada partie operowe,
-                        operetkowe i musicalowe, m. in.: rolę Dorabelli(Cosi fan tutte Mozarta), Drugiej i Trzeciej Damy
-                        (Czarodziejski fletMozarta), Czipry (Baron cygański J. Straussa), Jasia (Jaś i Małgosia Humperdincka).
-                        W tej ostatniej roli występowała także w Niemczech i Austrii. Śpiewała także partie: Lia San (Wiktoria
-                        i jej huzar Abrahama, Lizy (Hrabina Marica Kalmana), księcia Gigi (Zemsta nietoperza J. Straussa),
-                        Tangolity (Bal w Savoy'u Abrahama, Wdowy (musical Zorba Kandera), Hrabianki rosyjskiej (Król walca
-                        J. Straussa) oraz Siostry Hubert (musical Siostrunie Goggina). </p>
-                </div>
-                <div class="col-lg-12">
-                    <p>Wykonuje również repertuar oratoryjno-kantatowy. W roku 1990 założyła i do dziś prowadzi - jako dyrygentka
-                        i menadżer - zespół dziecięco-młodzieżowy Semen Dei. Zespół nagrał 3 kasety i dwie płyty kompaktowe,
-                        koncertował w wielu miastach Polski, a także w Niemczech, Austrii, Norwegii i Francji. Zespół zdobył
-                        wiele nagród i wyróżnień na konkursach i festiwalach m.in.: I miejsce na Sacrosongu w Swarzędzu (1993),
-                        główna nagroda na Śremsongu (1996, 1997), I miejsce na Ogólnopolskim Festiwalu Pieśni Religijnej
-                        w Żywcu (1996), wyróżnienie (2001) i I miejsce (2002) na Festiwalu Piosenki Religijnej Święta Góra
-                        w Gostyniu. W 2001 roku zespół nagrał autorski program dla TVP. Od sezonu artystycznego 2002/2003
-                        współpracuje z Lubuskim Biurem Koncertowym jako prelegentka i śpiewaczka.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Recordings Section -->
-    <section id="nagrania">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Nagrania</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 youtube-video">
-                <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/HTfGyO9kVBw" frameborder="0" allowfullscreen>
-                </iframe>
-                </div>
-                <div class="col-lg-6 youtube-video">
-                    <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/JhLxK2xGqqo?list=PLDBt7LIJrBCVjfCZnQxBqnMtQ74IJW0uT" frameborder="0" allowfullscreen>
-                </iframe>
-                </div>
-                <div class="col-lg-6 youtube-video">
-                    <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/rvQvcLXHWI4?list=PLDBt7LIJrBCVjfCZnQxBqnMtQ74IJW0uT" frameborder="0" allowfullscreen>
-                </iframe>
-                </div>
-                <div class="col-lg-6 youtube-video">
-                    <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/sMVFXfoaS3w?list=PLDBt7LIJrBCVjfCZnQxBqnMtQ74IJW0uT" frameborder="0" allowfullscreen>
-                </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Offer Section -->
-    <!--<section id="oferta">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Oferta</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- Didactics Section -->
-    <!--<section id="dydaktyka">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Dydaktyka</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- Reviews Section -->
-    <!--<section id="recenzje">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Recenzje</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- Galery Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Galeria</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section--muted" id="kontakt">
+            <div class="container">
+                <h2 class="section__title">Kontakt</h2>
+                <div class="contact">
+                    <form class="contact__form" id="contact-form" action="mail/contact_me.php" method="post" novalidate>
+                        <div class="field">
+                            <label for="name">Imię</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required
+                                data-error="Proszę podaj swoje imię.">
+                            <p class="field__error" aria-live="polite"></p>
                         </div>
-                        <img src="https://unsplash.it/700/440/?random" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required
+                                data-error="Proszę podaj poprawny adres email.">
+                            <p class="field__error" aria-live="polite"></p>
                         </div>
-                        <img src="https://unsplash.it/700/440/?random" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                        <div class="field">
+                            <label for="phone">Numer telefonu</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel" required
+                                data-error="Proszę podaj swój numer telefonu.">
+                            <p class="field__error" aria-live="polite"></p>
                         </div>
-                        <img src="https://unsplash.it/700/440/?random" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                        <div class="field">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" rows="5" required
+                                data-error="Proszę wpisz treść wiadomości."></textarea>
+                            <p class="field__error" aria-live="polite"></p>
                         </div>
-                        <img src="https://unsplash.it/700/440/?random" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://unsplash.it/700/440/?random" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://unsplash.it/700/440/?random" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="kontakt">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Kontakt</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row row-contact">
-                <div class="col-lg-8">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Imię</label>
-                                <input type="text" class="form-control" placeholder="Imię" id="name" required data-validation-required-message="Prosze podaj swoje imię.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Proszę podaj swój adres email">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Numer telefonu</label>
-                                <input type="tel" class="form-control" placeholder="Telefon" id="phone" required data-validation-required-message="Proszę podaj swój numer telefonu.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Wiadomość</label>
-                                <textarea class="form-control" placeholder="Wiadomość" id="message" required data-validation-required-message="Proszę wpisz treść wiadomości."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Wyślij</button>
-                            </div>
-                        </div>
+                        <div class="form-status" role="status" aria-live="polite"></div>
+                        <button class="btn btn--primary" type="submit">Wyślij</button>
                     </form>
-                </div>
-                <div class="col-lg-4 contact-data">
-                    <div>
-                        <h3>Nr telefonu</h3>
-                        <a href="tel:+48502634412">502-688-492</a>
-                    </div>
-                    <div>
-                        <h3>Email</h3>
-                        <a href="mailto:dorota3040@wp.pl">dorota9999@wp.pl</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Zdjęcie</h2>
-                            <hr class="star-light">
-                            <img src="https://unsplash.it/700/440/?random" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Zamknij</button>
+
+                    <address class="contact__data">
+                        <div>
+                            <h3>Telefon</h3>
+                            <a href="tel:+48502634412">502-688-492</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Zdjęcie</h2>
-                            <hr class="star-light">
-                            <img src="https://unsplash.it/700/440/?random" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Zamknij</button>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:dorota3040@wp.pl">dorota9999@wp.pl</a>
                         </div>
-                    </div>
+                    </address>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span data-year>2016</span> Dorota Czerwińska</p>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Zdjęcie</h2>
-                            <hr class="star-light">
-                            <img src="https://unsplash.it/700/440/?random" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Zamknij</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Zdjęcie</h2>
-                            <hr class="star-light">
-                            <img src="https://unsplash.it/700/440/?random" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Zamknij</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Zdjęcie</h2>
-                            <hr class="star-light">
-                            <img src="https://unsplash.it/700/440/?random" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Zamknij</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Zdjęcie</h2>
-                            <hr class="star-light">
-                            <img src="https://unsplash.it/700/440/?random" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Zamknij</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.min.js"></script>
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-    <!-- Custom functions -->
-    <script src="js/custom.js"></script>
+    </footer>
+
+    <!-- Gallery preview -->
+    <dialog class="lightbox" id="lightbox" aria-label="Podgląd zdjęcia">
+        <button class="lightbox__close" type="button" aria-label="Zamknij" data-lightbox-close>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <img class="lightbox__image" src="" alt="">
+    </dialog>
 </body>
 
 </html>
