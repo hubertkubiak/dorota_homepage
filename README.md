@@ -1,5 +1,10 @@
 # Dorota Czerwińska – homepage
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES2020-F7DF1E?logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?logo=php&logoColor=white)
+
 A one-page website for **Dorota Czerwińska**, a mezzo-soprano from Poznań, Poland.
 It presents her biography, recordings and a photo gallery, and lets visitors get in
 touch through a contact form.
@@ -92,7 +97,3 @@ still in the git history.
 ## Author
 
 Hubert Kubiak – [github.com/hubertkubiak](https://github.com/hubertkubiak)
-
-## License
-
-[MIT](LICENSE)
